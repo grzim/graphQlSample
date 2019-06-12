@@ -1,0 +1,19 @@
+.main-container {
+        display: flex;
+        margin: 12px;
+}
+.main-container > div, .movies-container > div {
+    margin: 12px;
+}
+
+.title {
+    color: blue;
+}
+
+.movies-container > div:nth-child(odd) {
+    background: #e5e5e5;
+}
+
+.description {
+    color: #a31515;
+}

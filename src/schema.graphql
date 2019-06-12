@@ -1,0 +1,28 @@
+type Query {
+    movies(title: String) : [Movie]
+    activeMovies(title: String) : [Movie]
+    archivedMovies(name: String): [Movie]
+}
+
+type Mutation {
+    addMovie(description: String, title: String!, minAge: Int): [Movie]!
+    editMovie(description: String, title: String!, newTitle: String, minAge: Int): [Movie]!
+    archiveMovie(title: String!): [Movie]!
+    restoreMovie(title: String!): [Movie]!
+}
+
+type Movie {
+    title: String!
+    description: String
+    minAge: Int
+    prequel: String
+    sequel: String
+    isActive: Boolean!
+}
+
+type Subscription {
+    archiveMovie: Movie
+    newActiveMovie: Movie
+    restoredMovie: Movie
+    editedMovie: Movie
+}

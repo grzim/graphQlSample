@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies catalog</title>
+    <script type="module" src="index.js"></script>
+    <link rel = "stylesheet"
+          type = "text/css"
+          href = "styles.css" />
+</head>
+<body>
+
+<div class='main-container'>
+    <div class='movie-panel'>
+        <div class='show-details'>
+            <div> display</div>
+            <select class="movie-details-to-show-input" multiple="multiple">
+                <option class="movie-details-to-show-option" value="title" selected>title</option>
+                <option class="movie-details-to-show-option" value="description" selected>description</option>
+                <option class="movie-details-to-show-option" value="minAge">min-age</option>
+            </select>
+        </div>
+        <input class='search-input' placeholder='search'>
+        <h3> movies: </h3>
+        <div class='movies-container'>
+        </div>
+    </div>
+    <div class='add-panel'>
+        <h3> Add movie: </h3>
+        <div class='movie-title'>
+            <input name='title' class='add-movie-title-input' placeholder='title'>
+        </div>
+        <div class='movie-details'>
+            <input name='description' class='add-movie-description-input' placeholder='description'>
+        </div>
+        <div class='movie-min-age'>
+            <input name='minAge' class='add-movie-min-age-input' type='number'  placeholder='min age'>
+        </div>
+        <div class='movie-prequel'>
+            <select name='prequel' class='add-movie-prequel-input'> </select>
+        </div>
+        <div class='movie-sequel'>
+            <select name='sequel' class='add-movie-sequel-input'> </select>
+        </div>
+        <button class="movie-add">add movie</button>
+        <h3> Added movie: </h3>
+        <div class='added-movie-container'>
+        </div>
+    </div>
+    <div class='edit-panel'>
+        <h3> Select movie: </h3>
+        <div class='movie-to-edit-title'>
+            <select name='title' class='edit-new-movie-title-input'> </select>
+        </div>
+        <h3> Edit movie: </h3>
+        <div class='movie-details'>
+            <input class='edit-new-movie-description-input' name='description' placeholder='new description'>
+        </div>
+        <div class='movie-min-age'>
+            <input class='edit-new-movie-min-age-input' name='minAge' type='number' placeholder='new min age'>
+        </div>
+        <div class='movie-prequel'>
+            <select name='prequel' class='edit-new-movie-prequel-input'> </select>
+        </div>
+        <div class='movie-sequel'>
+            <select name='sequel' class='edit-new-movie-sequel-input'> </select>
+        </div>
+        <h3>Archive movie</h3>
+        <button class="movie-archive-btn">archive movie</button>
+    </div>
+    <div class='archived-movies-panel'>
+        <h3> Archived movies: </h3>
+        <div class='archived-movies-container'>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

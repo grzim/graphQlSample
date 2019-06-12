@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies catalog</title>
+    <script type="module" src="/168726dbe96b3ce427e7fedce31bb0bc.js"></script>
+    <link rel="stylesheet" type="text/css" href="/4e7bb40584b55a44f4657b188986bff4.css">
+</head>
+<body>
+
+<div class="main-container">
+    <div class="movie-panel">
+        <div class="show-details">
+            <div> display</div>
+            <select class="movie-details-to-show-input" multiple="multiple">
+                <option class="movie-details-to-show-option" value="title" selected="">title</option>
+                <option class="movie-details-to-show-option" value="duration" selected="">duration</option>
+                <option class="movie-details-to-show-option" value="min-age">min-age</option>
+            </select>
+        </div>
+        <input class="search-input" placeholder="search">
+        <h3> movies: </h3>
+        <div class="movie-container">
+        </div>
+    </div>
+    <div class="edit-panel">
+        <div class="movie-name">
+            <input class="movie-name-input" placeholder="name">
+        </div>
+        <div class="movie-duration">
+            <input class="movie-duration-input" type="number" placeholder="duration">
+        </div>
+        <div class="movie-min-age">
+            <input class="movie-min-age-input" placeholder="min age">
+        </div>
+        <div class="movie-prequel">
+            <input class="movie-prequel-input" placeholder="prequel">
+        </div>
+        <div class="movie-sequel">
+            <input class="movie-sequel-input" placeholder="sequel">
+        </div>
+        <button class="movie-delete-btn"> archive movie</button>
+    </div>
+    <h3> Archived movies: </h3>
+    <div class="archived-movies-panel">
+        <div class="archived-movies-container">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

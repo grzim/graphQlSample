@@ -1,0 +1,9 @@
+type Movie {
+    id: ID! @id
+    title: String! @unique
+    description: String
+    minAge: Int
+    prequel: String
+    sequel: String
+    isActive: Boolean!
+}
